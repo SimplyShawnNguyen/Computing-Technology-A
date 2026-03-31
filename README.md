@@ -11,6 +11,7 @@ Detect approach toward surfaces using optical flow
 Understand expansion (forward motion) and contraction (backward motion)
 Analyse behaviour under different conditions (texture, motion type)
 Build a foundation for robot docking and surface alignment
+
 🧠 Key Concepts
 🔹 Optical Flow
 
@@ -29,10 +30,12 @@ A key concept from the research paper:
 The point of maximum divergence indicates important motion information
 Can be used to control approach speed and direction
 Enables docking without knowing exact surface orientation
+
 🛠️ Technologies Used
 Python
 OpenCV
 NumPy
+
 ⚙️ System Features
 Real-time webcam input
 Frame preprocessing (resize + grayscale)
@@ -43,6 +46,7 @@ Motion visualisation:
 Vector arrows
 Overlay
 Heatmaps
+
 🧪 How the System Works
 Capture two consecutive frames
 Convert frames to grayscale
@@ -50,23 +54,27 @@ Compute optical flow between frames
 Extract motion vectors (fx, fy)
 Visualise motion using arrows or other methods
 Repeat continuously for real-time output
+
 📊 Key Findings (Sprint 1)
 Motion detection works well in real time
 Object movement is easier to detect than camera forward/backward motion
 Optical flow direction is opposite to camera movement
 Flat (low-texture) surfaces produce weak and noisy results
 Faster movement improves motion visibility slightly
+
 ⚠️ Limitations
 Poor performance on flat or featureless surfaces
 Noise in low-texture regions
 Forward/backward motion is harder to detect
 Sensitive to lighting and small motion
+
 🔍 Future Work
 Implement divergence calculation (div = ux + vy)
 Detect max-div point in the flow field
 Use divergence for time-to-contact estimation
 Apply control laws for robot docking
 Integrate with real robotic system (CP system / PLC + BaSyx)
+
 👥 Team Approach
 
 Each team member implemented a different combination of:
