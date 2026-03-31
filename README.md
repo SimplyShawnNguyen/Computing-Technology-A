@@ -135,5 +135,3 @@ The work provides a foundation for more advanced approaches such as max-div, whi
 
 McCarthy, C., & Barnes, N. (2012). A Unified Strategy for Landing and Docking Using Spherical Flow Divergence
 
-/>
-
